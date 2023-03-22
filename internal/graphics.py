@@ -5,7 +5,7 @@ def graphCreater(x, y):
 
     plt.figure(label="Изменение линейной сложности в зависимости от количества элементов")
 
-    plt.xlabel("Количество элементов")
+    plt.xlabel("Количество бит")
     plt.ylabel("Линейная сложность")
     plt.plot(x, y, mec="b")
 
