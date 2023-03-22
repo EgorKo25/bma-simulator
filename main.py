@@ -6,9 +6,10 @@ if __name__ == "__main__":
     X = []
     Y = []
 
+    length = int(input("Enter a length of seq: "))
     seq = "1"
 
-    while len(seq) <= 100:
+    while len(seq) <= length:
         f_min = bma.BerlekampMasseyAlgorithm(bma.Seq2list(sequence=seq))
         X.append(len(seq))
         Y.append(max(f_min))
@@ -16,11 +17,7 @@ if __name__ == "__main__":
         print(f"Processing: {len(seq)}%", end="\r")
 
     gh.graphCreater(X, Y)
-    """
-        print(f"Enter a sequence: {seq}")
-        print(f"Minimum multiplicity: {bma.print_f(f_min)}")
-        print(f"Minimum number of times: {str(max(f_min))}")
-    """
+
 
 
 
